@@ -13,7 +13,7 @@ class LinearGradientWrap extends StatelessWidget {
         _child,
         Container(
           height: MediaQuery.of(context).size.height * 0.15,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -22,7 +22,7 @@ class LinearGradientWrap extends StatelessWidget {
                 1,
               ],
               colors: [
-                Colors.black,
+                Theme.of(context).colorScheme.onPrimaryContainer,
                 Colors.transparent,
               ],
             ),
@@ -32,7 +32,7 @@ class LinearGradientWrap extends StatelessWidget {
           alignment: AlignmentDirectional.bottomStart,
           child: Container(
             height: MediaQuery.of(context).size.height * 0.15,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               gradient: LinearGradient(
                 end: Alignment.bottomCenter,
                 begin: Alignment.topCenter,
@@ -42,7 +42,7 @@ class LinearGradientWrap extends StatelessWidget {
                 ],
                 colors: [
                   Colors.transparent,
-                  Colors.black,
+                  Theme.of(context).colorScheme.onPrimaryContainer,
                 ],
               ),
             ),

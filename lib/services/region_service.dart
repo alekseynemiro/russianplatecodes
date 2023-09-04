@@ -11,11 +11,14 @@ class RegionService {
     final parsed = jsonDecode(data) as List;
     final List<Region> result = [];
 
-    for (var json in parsed) {
-      for (var code in (json['codes'] as List)) {
+    for (final json in parsed) {
+      final codes = List<String>.from(json['codes']);
+
+      for (final code in codes) {
         result.add(Region(
           code: code,
           name: json['region'],
+          allCodes: codes,
         ));
       }
     }

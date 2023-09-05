@@ -11,39 +11,43 @@ class LinearGradientWrap extends StatelessWidget {
     return Stack(
       children: [
         _child,
-        Container(
-          height: MediaQuery.of(context).size.height * 0.15,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              stops: const [
-                0,
-                1,
-              ],
-              colors: [
-                Theme.of(context).colorScheme.onPrimaryContainer,
-                Colors.transparent,
-              ],
-            ),
-          ),
-        ),
-        Align(
-          alignment: AlignmentDirectional.bottomStart,
+        IgnorePointer(
           child: Container(
             height: MediaQuery.of(context).size.height * 0.15,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                end: Alignment.bottomCenter,
                 begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
                 stops: const [
                   0,
                   1,
                 ],
                 colors: [
-                  Colors.transparent,
                   Theme.of(context).colorScheme.onPrimaryContainer,
+                  Colors.transparent,
                 ],
+              ),
+            ),
+          ),
+        ),
+        IgnorePointer(
+          child: Align(
+            alignment: AlignmentDirectional.bottomStart,
+            child: Container(
+              height: MediaQuery.of(context).size.height * 0.15,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  end: Alignment.bottomCenter,
+                  begin: Alignment.topCenter,
+                  stops: const [
+                    0,
+                    1,
+                  ],
+                  colors: [
+                    Colors.transparent,
+                    Theme.of(context).colorScheme.onPrimaryContainer,
+                  ],
+                ),
               ),
             ),
           ),

@@ -17,7 +17,7 @@ class LinearGradientWrap extends StatelessWidget {
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              stops: [
+              stops: const [
                 0,
                 1,
               ],
@@ -36,7 +36,7 @@ class LinearGradientWrap extends StatelessWidget {
               gradient: LinearGradient(
                 end: Alignment.bottomCenter,
                 begin: Alignment.topCenter,
-                stops: [
+                stops: const [
                   0,
                   1,
                 ],

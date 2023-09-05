@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
       body: ThreeRowLayout(
         RegionSearch(),
         LinearGradientWrap(
-            StreamBuilder<int>(
+          StreamBuilder<int>(
             stream: _stream,
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {

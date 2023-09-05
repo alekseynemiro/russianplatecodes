@@ -9,7 +9,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const colorScheme = ColorScheme(
-      brightness: Brightness.light,
+      brightness: Brightness.dark,
       primary: Color(0xFF006398),
       onPrimary: Color(0xFFFFFFFF),
       primaryContainer: Color(0xFFCDE5FF),

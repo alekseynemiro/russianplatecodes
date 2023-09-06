@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class RegionCode extends StatelessWidget {
+class RegionCodeView extends StatelessWidget {
 
   final String _code;
 
-  const RegionCode(this._code, { super.key });
+  const RegionCodeView(this._code, { super.key });
 
   @override
   Widget build(BuildContext context) {

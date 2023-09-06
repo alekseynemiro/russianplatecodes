@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import '../../models/region.dart';
+import '../../models/region_code.dart';
 import '../../services/region_service.dart';
 import '../views/linear_gradient_wrap.dart';
 import '../views/region_code_list.dart';
@@ -27,9 +27,9 @@ class _HomePageState extends State<HomePage> {
 
   late final Stream<int> _stream;
 
-  late List<Region> _regionList;
+  late List<RegionCode> _regionList;
 
-  Region? _activeRegion;
+  RegionCode? _activeRegion;
 
   @override
   void initState() {

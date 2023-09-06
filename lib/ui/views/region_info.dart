@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../../models/region.dart';
-import 'region_code.dart';
+import '../../models/region_code.dart';
+import 'region_code_view.dart';
 
 class RegionInfo extends StatelessWidget {
 
-  final Region? _region;
+  final RegionCode? _region;
 
   const RegionInfo(this._region, { super.key });
 
@@ -44,8 +44,8 @@ class RegionInfo extends StatelessWidget {
             child: Wrap(
               spacing: 8,
               runSpacing: 8,
-              children: region.allCodes.map<RegionCode>((code) {
-                return RegionCode(code);
+              children: region.allCodes.map<RegionCodeView>((code) {
+                return RegionCodeView(code);
               }).toList(),
             ),
           ),

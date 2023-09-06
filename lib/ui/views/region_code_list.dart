@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:rect_getter/rect_getter.dart';
 
-import '../../models/region.dart';
+import '../../models/region_code.dart';
 
-typedef OnShownRegionCallback = void Function(Region region);
+typedef OnShownRegionCallback = void Function(RegionCode region);
 
 class RegionCodeList extends StatefulWidget {
 
-  final List<Region> regions;
+  final List<RegionCode> regions;
 
   final OnShownRegionCallback onShownRegion;
 
@@ -89,9 +89,9 @@ class _RegionCodeListState extends State<RegionCodeList> {
     );
   }
 
-  List<Region> getVisible() {
+  List<RegionCode> getVisible() {
     final rect = RectGetter.getRectFromKey(_listViewKey);
-    final items = <Region>[];
+    final items = <RegionCode>[];
 
     if (rect == null) {
       return items;

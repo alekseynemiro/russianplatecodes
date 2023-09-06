@@ -1,4 +1,4 @@
-class Region {
+class RegionCode {
 
   final String code;
 
@@ -6,7 +6,7 @@ class Region {
 
   final List<String> allCodes;
 
-  const Region({
+  const RegionCode({
     required this.code,
     required this.name,
     required this.allCodes

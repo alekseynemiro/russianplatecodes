@@ -44,8 +44,11 @@ class RegionInfo extends StatelessWidget {
             child: Wrap(
               spacing: 8,
               runSpacing: 8,
-              children: region.allCodes.map<RegionCodeView>((code) {
-                return RegionCodeView(code);
+              children: region.allCodes.map<RegionCodeView>((x) {
+                return RegionCodeView(
+                  code: x,
+                  brightness: RegionCodeViewBrightness.dark,
+                );
               }).toList(),
             ),
           ),

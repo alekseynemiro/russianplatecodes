@@ -2,28 +2,28 @@ import 'package:flutter/material.dart';
 
 class ThreeRowLayout extends StatelessWidget {
 
-  final Widget? _header;
+  final Widget? header;
 
-  final Widget _main;
+  final Widget main;
 
-  final Widget? _footer;
+  final Widget? footer;
 
-  const ThreeRowLayout(
-      this._header,
-      this._main,
-      this._footer,
-      { super.key }
-  );
+  const ThreeRowLayout({
+    super.key,
+    this.header,
+    this.footer,
+    required this.main,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        _header != null
+        header != null
           ? Row(
             children: [
               Expanded(
-                child: _header!,
+                child: header!,
               ),
             ],
           )
@@ -32,20 +32,20 @@ class ThreeRowLayout extends StatelessWidget {
             child: Row(
               children: [
                 Expanded(
-                  child: _main,
+                  child: main,
                 ),
               ],
             )
         ),
-        _footer != null
+        footer != null
           ? Row(
             children: [
               Expanded(
-                child: _footer!,
+                child: footer!,
               ),
             ],
           )
-          : SizedBox.shrink(),
+          : const SizedBox.shrink(),
       ],
     );
   }

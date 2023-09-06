@@ -7,7 +7,6 @@ import '../../services/region_service.dart';
 import '../views/linear_gradient_wrap.dart';
 import '../views/region_code_list.dart';
 import '../views/region_info.dart';
-import '../views/region_search.dart';
 import '../views/three_row_layout.dart';
 
 class HomePage extends StatefulWidget {
@@ -62,8 +61,7 @@ class _HomePageState extends State<HomePage> {
         title: Text(widget.title),
       ),
       body: ThreeRowLayout(
-        RegionSearch(),
-        LinearGradientWrap(
+        main: LinearGradientWrap(
           StreamBuilder<int>(
             stream: _stream,
             builder: (context, snapshot) {
@@ -90,10 +88,10 @@ class _HomePageState extends State<HomePage> {
             },
           ),
         ),
-        SizedBox(
+        footer: SizedBox(
           height: MediaQuery.of(context).size.height * 0.25,
           child: RegionInfo(_activeRegion),
-        )
+        ),
       ),
     );
   }

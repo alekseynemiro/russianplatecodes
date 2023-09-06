@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
       late final StreamController<int> controller;
       controller = StreamController<int>(
         onListen: () async {
-          _regionList = await _regionService.fetchRegions();
+          _regionList = await _regionService.fetchRegionsSortedByCode();
 
           controller.add(1);
 

@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 
 class RegionSearch extends StatefulWidget {
 
-  const RegionSearch({ super.key });
+  final ValueChanged<String>? onChanged;
+
+  const RegionSearch({
+    super.key,
+    this.onChanged,
+  });
 
   @override
   createState() => _RegionSearchState();
@@ -33,6 +38,7 @@ class _RegionSearchState extends State<RegionSearch> {
               fontWeight: FontWeight.normal,
             ),
           ),
+          onChanged: widget.onChanged,
         ),
       ),
     );

@@ -29,13 +29,13 @@ class ThreeRowLayout extends StatelessWidget {
           )
           : const SizedBox.shrink(),
         Expanded(
-            child: Row(
-              children: [
-                Expanded(
-                  child: main,
-                ),
-              ],
-            )
+          child: Row(
+            children: [
+              Expanded(
+                child: main,
+              ),
+            ],
+          )
         ),
         footer != null
           ? Row(

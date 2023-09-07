@@ -60,13 +60,43 @@ class _DictionaryPageState extends State<DictionaryPage> {
               _regionList = snapshot.data!;
             }
 
+            Widget content;
+
+            if (_regionList.isEmpty) {
+              content = Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const NoData(),
+                        _filter != null && _filter!.isNotEmpty
+                          ? OutlinedButton(
+                            child: const Text('Сбросить фильтр'),
+                            onPressed: () {
+                              setState(() {
+                                _filter = null;
+                              });
+                            }
+                          )
+                          : const SizedBox.shrink(),
+                      ],
+                    ),
+                  ),
+                ],
+              ) ;
+            } else {
+              content = RegionList(
+                regions: _regionList,
+              );
+            }
+
             return ThreeRowLayout(
               header: RegionSearch(
+                filter: _filter,
                 onChanged: _filterRegions,
               ),
-              main: RegionList(
-                regions: _regionList,
-              ),
+              main: content,
             );
           }
 

@@ -52,7 +52,9 @@ class _DictionaryPageState extends State<DictionaryPage> {
           if (snapshot.hasData) {
             if (_filter != null && _filter!.isNotEmpty) {
               _regionList = snapshot.data!
-                .where((x) => x.name.contains(_filter!) || x.codes.where((xx) => xx.contains(_filter!)).isNotEmpty)
+                .where((x) => x.name.toLowerCase().contains(_filter!.toLowerCase())
+                  || x.codes.where((xx) => xx.toLowerCase().contains(_filter!.toLowerCase())).isNotEmpty
+                )
                 .toList();
             } else {
               _regionList = snapshot.data!;

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../models/region_name.dart';
 import '../../services/region_service.dart';
-import '../views/app_drawer.dart';
+import '../views/application_bar.dart';
+import '../views/application_drawer.dart';
 import '../views/no_data.dart';
 import '../views/region_list.dart';
 import '../views/region_search.dart';
@@ -37,11 +38,8 @@ class _DictionaryPageState extends State<DictionaryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('Справочник регионов'),
-      ),
-      drawer: const AppDrawer(),
+      appBar: const ApplicationBar('Справочник регионов'),
+      drawer: const ApplicationDrawer(),
       body: FutureBuilder(
         future: _regionListFuture,
         builder: (context, snapshot) {

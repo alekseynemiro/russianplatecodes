@@ -47,9 +47,7 @@ class App extends StatelessWidget {
         colorScheme: colorScheme,
         useMaterial3: true,
       ),
-      home: const HomePage(
-        title: 'Автомобильные коды России',
-      ),
+      home: const HomePage(),
     );
   }
 

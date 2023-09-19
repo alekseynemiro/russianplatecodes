@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../pages/about_page.dart';
@@ -29,7 +28,7 @@ class ApplicationDrawer extends StatelessWidget {
               child: Padding(
                   padding: const EdgeInsets.only(bottom: 12),
                   child: Text(
-                  'Автомобильные коды России',
+                  'Автомобильные коды регионов России',
                   style: TextStyle(
                     fontSize: 24,
                     color: Theme.of(context).colorScheme.onPrimary,

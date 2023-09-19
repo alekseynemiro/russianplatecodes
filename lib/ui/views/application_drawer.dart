@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../pages/about_page.dart';
 import '../pages/dictionary_page.dart';
 import '../pages/home_page.dart';
 
@@ -53,6 +54,16 @@ class ApplicationDrawer extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => const DictionaryPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('О программе...'),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => AboutPage(),
                 ),
               );
             },

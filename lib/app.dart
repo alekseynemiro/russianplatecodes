@@ -10,7 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     const colorScheme = ColorScheme(
       brightness: Brightness.dark,
-      primary: Color(0xFF006398),
+      primary: Color(0xFF001D32),
       onPrimary: Color(0xFFFFFFFF),
       primaryContainer: Color(0xFFCDE5FF),
       onPrimaryContainer: Color(0xFF001D32),
@@ -44,7 +44,37 @@ class App extends StatelessWidget {
 
     return MaterialApp(
       theme: ThemeData(
+        primaryIconTheme: IconThemeData(color: Color(0xFFFFFFFF)),
         colorScheme: colorScheme,
+        textTheme: TextTheme(
+          bodySmall: TextStyle(
+            color: Color(0xFF42474E),
+          ),
+          bodyMedium: TextStyle(
+            color: Color(0xFF42474E),
+          ),
+          bodyLarge: TextStyle(
+            color: Color(0xFF42474E),
+          ),
+          headlineSmall: TextStyle(
+            color: Color(0xFF42474E),
+          ),
+          headlineMedium: TextStyle(
+            color: Color(0xFF42474E),
+          ),
+          headlineLarge: TextStyle(
+            color: Color(0xFF42474E),
+          ),
+          titleLarge: TextStyle(
+            color: Color(0xFF42474E),
+          ),
+          titleMedium: TextStyle(
+            color: Color(0xFF42474E),
+          ),
+          titleSmall: TextStyle(
+            color: Color(0xFF42474E),
+          ),
+        ),
         useMaterial3: true,
       ),
       home: const HomePage(),

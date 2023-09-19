@@ -1,4 +1,4 @@
-package ru.nemiro.apps.russianplatecodes.russianplatecodes
+package ru.nemiro.apps.russianplatecodes
 
 import io.flutter.embedding.android.FlutterActivity
 

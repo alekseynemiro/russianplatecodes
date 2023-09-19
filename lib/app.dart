@@ -43,6 +43,7 @@ class App extends StatelessWidget {
     );
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryIconTheme: IconThemeData(color: Color(0xFFFFFFFF)),
         colorScheme: colorScheme,

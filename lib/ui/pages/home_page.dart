@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
               }
 
               return const Center(
-                child: Text("Нет данных..."),
+                child: Text('Нет данных...'),
               );
             },
           ),

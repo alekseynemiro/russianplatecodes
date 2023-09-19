@@ -80,7 +80,7 @@ class AboutPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                addBottomIndent(const Text('RussianPlateCodes')),
+                addBottomIndent(Text(packageInfo.appName)),
                 addBottomIndent(Text('Версия: ${packageInfo.version}')),
                 addBottomIndent(Text('Сборка: ${packageInfo.buildNumber}')),
                 addBottomIndent(Divider(color: Theme.of(context).colorScheme.outline)),

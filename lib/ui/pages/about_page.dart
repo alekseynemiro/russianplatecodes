@@ -146,7 +146,9 @@ class AboutPage extends StatelessWidget {
     return Scaffold(
       appBar: const ApplicationBar('О программе...'),
       drawer: const ApplicationDrawer(),
-      body: futureBuilder,
+      body: SingleChildScrollView(
+        child: futureBuilder,
+      ),
     );
   }
 

@@ -6,6 +6,7 @@
 
 Записи, которые были сделаны в процессе работы над проектом:
 
+* https://vk.com/aleksey.developer?w=wall-96983816_295 - Технический анонс и общие выводы по Flutter
 * https://vk.com/aleksey.developer?w=wall-96983816_294 - Без языка разметки у Flutter нет будущего
 * https://vk.com/aleksey.developer?w=wall-96983816_292 - Пара слов про ад вложенных виджетов во Flutter
 * https://vk.com/aleksey.developer?w=wall-96983816_290 - Мудрость про const

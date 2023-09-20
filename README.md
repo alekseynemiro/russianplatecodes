@@ -1,16 +1,13 @@
-# russianplatecodes
+# RussianPlateCodes
 
-A new Flutter project.
+Russian region codes for vehicle license plates.
 
-## Getting Started
+## Install
 
-This project is a starting point for a Flutter application.
+* [Google Play](https://play.google.com/store/apps/details?id=ru.nemiro.apps.russianplatecodes&utm_source=github)
+* [RuStore](https://apps.rustore.ru/app/ru.nemiro.apps.russianplatecodes)
+* [Download](https://github.com/alekseynemiro/russianplatecodes/releases)
 
-A few resources to get you started if this is your first Flutter project:
+## License
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+MIT

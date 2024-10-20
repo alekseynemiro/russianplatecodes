@@ -26,11 +26,9 @@ class App extends StatelessWidget {
       errorContainer: Color(0xFFFFDAD6),
       onError: Color(0xFFFFFFFF),
       onErrorContainer: Color(0xFF410002),
-      background: Color(0xFFFCFCFF),
-      onBackground: Color(0xFF1A1C1E),
-      surface: Color(0xFF006398),
-      onSurface: Color(0xFFFFFFFF),
-      surfaceVariant: Color(0xFFDEE3EB),
+      surface: Color(0xFFFCFCFF),
+      onSurface: Color(0xFF1A1C1E),
+      surfaceContainerHighest: Color(0xFFDEE3EB),
       onSurfaceVariant: Color(0xFF42474E),
       outline: Color(0xFF72787E),
       onInverseSurface: Color(0xFFF0F0F4),
@@ -45,9 +43,9 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryIconTheme: IconThemeData(color: Color(0xFFFFFFFF)),
+        primaryIconTheme: const IconThemeData(color: Color(0xFFFFFFFF)),
         colorScheme: colorScheme,
-        textTheme: TextTheme(
+        textTheme: const TextTheme(
           bodySmall: TextStyle(
             color: Color(0xFF42474E),
           ),
@@ -75,6 +73,9 @@ class App extends StatelessWidget {
           titleSmall: TextStyle(
             color: Color(0xFF42474E),
           ),
+        ),
+        listTileTheme: ListTileThemeData(
+          textColor: colorScheme.onPrimary,
         ),
         useMaterial3: true,
       ),

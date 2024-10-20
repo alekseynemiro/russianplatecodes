@@ -17,7 +17,7 @@ class ApplicationDrawer extends StatelessWidget {
         children: [
           DrawerHeader(
             decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.primary,
+              color: Theme.of(context).colorScheme.onPrimary,
               image: const DecorationImage(
                 image: AssetImage('assets/bg.png'),
                 fit: BoxFit.cover,
